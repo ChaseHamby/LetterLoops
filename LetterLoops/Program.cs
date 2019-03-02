@@ -23,6 +23,12 @@ namespace LetterLoops
                 loopCount++;
             }
             Console.WriteLine(string.Join('-', myCharacters));
+
+            //Second way to do it is listed below using terse and linq (using System.Linq)
+
+            //var output = string.Join('-', input.ToCharArray().Select(c => c.ToString().ToUpper() + new string(c, loopCount++)));
+            //Console.WriteLine(output);
+
             Console.ReadKey();
         }
     }
